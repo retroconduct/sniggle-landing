@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sniggle — Bubbly & Distraction-Free Kids Cellular Locator</title>
+    <meta name="description" content="Meet Sniggle: the friendly, snail-inspired cellular device for children. GPS tracking, SOS alert, and zero screen distractions. Designed for kids' play and parents' peace of mind.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Playful Cartoon Background Ornaments -->
+    <div class="floating-decor decor-1">🐌</div>
+    <div class="floating-decor decor-2">💬</div>
+    <div class="floating-decor decor-3">⭐</div>
+    <div class="floating-decor decor-4">❤️</div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Sniggle Mascot Logo">
+                <span class="logo-text">Sniggle<span class="logo-heart-dot">❤️</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#features" class="nav-link">Why Sniggle</a></li>
+                <li><a href="#simulator" class="nav-link">Interactive Demo</a></li>
+                <li><a href="#roadmap" class="nav-link">Product Roadmap</a></li>
+                <li><a href="#build-in-public" class="nav-link">Co-Design Hub</a></li>
+                <li><a href="#specs" class="nav-link">Technical Specs</a></li>
+            </ul>
+            <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span></span> Meet the Snail: Phase 1 Teaser
+                </div>
+                <h1 class="hero-title">
+                    Safe. Connected.<br>
+                    <span class="coral-highlight">Smartphone-Free.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Sniggle is the adorable, screen-free cellular companion that lets parents locate and talk to their kids—without the risk of screen time addiction, cyberbullying, or internet distractions.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#waitlist" class="btn btn-primary">Join the Snail Waitlist</a>
+                    <a href="#simulator" class="btn btn-secondary">Play with SOS Demo</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h4>LTE-M</h4>
+                        <p>No Wi-Fi Needed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>IP67</h4>
+                        <p>Kid-Proof Build</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>48 hrs</h4>
+                        <p>Playtime Battery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-showcase">
+                <div class="hero-glow-ring"></div>
+                <div class="hero-img-card">
+                    <!-- Premium Sniggle Device Graphic -->
+                    <img id="main-device-image" src="assets/sniggle_device.png" alt="Sniggle cute screen free tracking hardware for children">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Designed for Adventurous Kids</h2>
+            <div class="features-grid">
+                <div class="playful-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">100% Screen-Free</h3>
+                    <p>Designed to be safe from digital hazards. Your child gets tracking and quick contact, but stays protected from screen time addiction, cyberbullying, and internet hazards.</p>
+                    <img class="feature-card-img" src="assets/screen_free_play.png" alt="Screen-Free Outdoor Play">
+                </div>
+                <div class="playful-card">
+                    <div class="feature-icon">📍</div>
+                    <h3 class="feature-title">Real-Time Snail Trail</h3>
+                    <p>Powered by dedicated low-power cellular modules (LTE-M / NB-IoT) that ping live locations directly to the parent app, even in areas without standard Wi-Fi.</p>
+                </div>
+                <div class="playful-card">
+                    <div class="feature-icon">🚨</div>
+                    <h3 class="feature-title">Simple Heart SOS</h3>
+                    <p>A single, highly tactile SOS button. If pressed, it initiates a high-priority alert that immediately pings the parent companion app and sets the tracking interval to high-frequency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive SOS Simulator Section -->
+    <section id="simulator">
+        <div class="container">
+            <h2>Try the Snail Alarm</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 4rem auto;">See how Sniggle instantly bridges the gap between your child and your smartphone without exposing them to screen distractions.</p>
+            
+            <div class="simulator-wrapper">
+                <!-- Visual Interactive UI Mockup -->
+                <div class="sim-interface">
+                    <div class="mock-sniggle" id="sim-device">
+                        <div class="mock-sniggle-brand">SNIGGLE</div>
+                        <div class="sim-screen" id="sim-device-screen">
+                            <span class="screen-icon" id="sim-screen-icon">🐌</span>
+                            <span class="screen-text" id="sim-screen-text">HELLO!</span>
+                        </div>
+                        <div class="sim-btn-row">
+                            <button class="nav-arrow-btn" id="sim-prev-btn">◀</button>
+                            <button class="sos-btn" id="sim-sos-trigger">SOS</button>
+                            <button class="nav-arrow-btn" id="sim-next-btn">▶</button>
+                        </div>
+                        <div class="sniggle-led"></div>
+                    </div>
+                    
+                    <div class="sim-connection">
+                        <div class="connection-line"></div>
+                    </div>
+                    
+                    <div class="mock-phone">
+                        <div class="phone-screen">
+                            <!-- CSS Vector Map Dashboard -->
+                            <div class="phone-map-container">
+                                <div class="map-road-h"></div>
+                                <div class="map-road-v"></div>
+                                <div class="map-geofence"></div>
+                                <div class="map-locator-pulse">
+                                    <div class="locator-radar"></div>
+                                    <div class="locator-marker">🐌</div>
+                                </div>
+                            </div>
+                            <!-- Parent App Metrics Dashboard -->
+                            <div class="phone-dashboard">
+                                <div class="dash-header">LEO'S SNIGGLE</div>
+                                <div class="dash-stats-grid">
+                                    <div class="dash-stat-pill">BATTERY<span id="stat-battery">98%</span></div>
+                                    <div class="dash-stat-pill">SIGNAL<span id="stat-signal">LTE-M</span></div>
+                                    <div class="dash-stat-pill">STATUS<span id="stat-geofence">Safe Zone</span></div>
+                                    <div class="dash-stat-pill">UPDATED<span id="stat-time">Just Now</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="phone-overlay" id="phone-alert-overlay">
+                                <div class="notification-banner">
+                                    <h5>🚨 Snail SOS!</h5>
+                                    <p>Leo has triggered a Sniggle SOS. Live location active.</p>
+                                </div>
+                                <div class="mock-actions">
+                                    <button class="btn-sim-action action-call" id="btn-call-kid">Call Sniggle Device</button>
+                                    <button class="btn-sim-action action-dismiss" id="btn-dismiss-alert">Dismiss Alarm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step instructions -->
+                <div class="sim-instructions">
+                    <div class="instruction-step">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <h4>Press the "SOS" Button</h4>
+                            <p>Click the red heart-labeled SOS button on the Sniggle device mock-up to trigger a simulation of a child requesting immediate contact.</p>
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <h4>Sending "Snail Trail" Signals</h4>
+                            <p>Watch the flashing status LED and cellular wave animations transmit the location packet over LTE-M networks.</p>
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <h4>Instant Parent Alert</h4>
+                            <p>See the alert pop up on the parent companion app, overlaying the live GPS location with direct voice call capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent App Showcase Section -->
+    <section id="parent-app" style="background-color: #ffffff; border-top: var(--border-width) solid var(--dark-outline);">
+        <div class="container bip-grid">
+            <div style="text-align: center;">
+                <div class="hero-img-card" style="display: inline-block; max-width: 250px;">
+                    <img src="assets/parent_app.png" alt="Parent app mockup tracking screen" style="width: 100%; height: auto;">
+                </div>
+            </div>
+            <div>
+                <h2 style="text-align: left; margin-bottom: 1.5rem;">The Parent Companion App</h2>
+                <p style="margin-bottom: 2rem;">Manage your child's safety in real-time. Our companion smartphone app (iOS & Android) gives you full administrative control with a clean, easy-to-use interface.</p>
+                <ul style="list-style: none; display: grid; gap: 1.25rem;">
+                    <li style="display: flex; gap: 1rem; align-items: flex-start; font-weight: 700; font-size: 1.1rem;">
+                        <span style="background: var(--primary-yellow); border: 2px solid var(--dark-outline); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 2px 2px 0 var(--dark-outline);">✓</span>
+                        <div>
+                            <strong>Interactive Location History</strong>
+                            <p style="font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">See exactly where your child has walked throughout the day with historical breadcrumbs.</p>
+                        </div>
+                    </li>
+                    <li style="display: flex; gap: 1rem; align-items: flex-start; font-weight: 700; font-size: 1.1rem;">
+                        <span style="background: var(--primary-yellow); border: 2px solid var(--dark-outline); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 2px 2px 0 var(--dark-outline);">✓</span>
+                        <div>
+                            <strong>Custom Geofence Safe Zones</strong>
+                            <p style="font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">Draw safe zones (like home, school, or a friend's house) and get alerts if they exit or enter.</p>
+                        </div>
+                    </li>
+                    <li style="display: flex; gap: 1rem; align-items: flex-start; font-weight: 700; font-size: 1.1rem;">
+                        <span style="background: var(--primary-yellow); border: 2px solid var(--dark-outline); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 2px 2px 0 var(--dark-outline);">✓</span>
+                        <div>
+                            <strong>School Mode Schedule</strong>
+                            <p style="font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">Mute alerts and lock button reactions during school hours to help them focus in class.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Roadmap Section -->
+    <section id="roadmap">
+        <div class="container">
+            <h2>Product Development Roadmap</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 1.5rem auto;">We are committed to building in public. Follow our progress from architecture to physical assembly line validation and shipping.</p>
+            
+            <div class="roadmap-controls">
+                <div class="view-toggles">
+                    <button class="toggle-btn active" id="btn-view-timeline">Timeline View</button>
+                    <button class="toggle-btn" id="btn-view-wbs">Detailed WBS Grid</button>
+                </div>
+                
+                <div class="search-filter-box" id="wbs-search-box" style="display: none;">
+                    <input type="text" class="search-input" id="roadmap-search" placeholder="Search tasks (e.g. PCB, app, cellular)...">
+                    <select class="select-filter" id="roadmap-filter">
+                        <option value="all">All Categories</option>
+                        <option value="Hardware Specifications">Hardware Specs</option>
+                        <option value="Industrial Design">Industrial Design</option>
+                        <option value="Digital Presence">Digital Presence</option>
+                        <option value="Hardware Prototyping">Hardware Prototyping</option>
+                        <option value="Software & Firmware MVP">Software & Firmware</option>
+                        <option value="Marketing Setup">Marketing & Community</option>
+                        <option value="Custom PCB Design">PCB Design</option>
+                        <option value="Internal Testing">Internal Testing</option>
+                        <option value="Tooling & Manufacturing Prep">Factory Tooling</option>
+                        <option value="Durability & Compliance">Durability & Compliance</option>
+                        <option value="Factory Line Validation">Line Validation</option>
+                        <option value="Pre-Order Campaign">Pre-Order</option>
+                        <option value="Manufacturing & Logistics">Logistics</option>
+                        <option value="Supply Chain">Supply Chain</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- View 1: Timeline High-Level Roadmap -->
+            <div class="roadmap-timeline" id="timeline-container">
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="node-card">
+                        <div class="node-header">
+                            <h4>Phase 1: Concept & Architecture</h4>
+                            <span class="node-timeline">Weeks 1–4</span>
+                        </div>
+                        <p class="node-desc">We define what the device will do, design initial 3D models, select cellular modules and MCUs, and launch a teaser website to start building our audience.</p>
+                    </div>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="node-card">
+                        <div class="node-header">
+                            <h4>Phase 2: Proof of Concept</h4>
+                            <span class="node-timeline">Weeks 5–8</span>
+                        </div>
+                        <p class="node-desc">We build early, rough prototypes using basic off-the-shelf dev boards and write the initial firmware to prove the LTE-M cellular tower connection works.</p>
+                    </div>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="node-card">
+                        <div class="node-header">
+                            <h4>Phase 3: Engineering Validation (EVT)</h4>
+                            <span class="node-timeline">Weeks 9–14</span>
+                        </div>
+                        <p class="node-desc">We design and manufacture our first custom-designed circuit boards (PCBs) to fit the compact casing size, testing internal batteries and antenna performance.</p>
+                    </div>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="node-card">
+                        <div class="node-header">
+                            <h4>Phase 4: Design Validation (DVT)</h4>
+                            <span class="node-timeline">Weeks 15–20</span>
+                        </div>
+                        <p class="node-desc">We manufacture casing using steel injection molds, perform drop/waterproof durability testing, and submit devices for regulatory certifications (FCC/CE).</p>
+                    </div>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="node-card">
+                        <div class="node-header">
+                            <h4>Phase 5: Pre-Production & Pre-Order</h4>
+                            <span class="node-timeline">Weeks 21–24</span>
+                        </div>
+                        <p class="node-desc">We run a pilot assembly test at the factory, lock down the release candidate software, film a demo video, and open up transactional pre-orders.</p>
+                    </div>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-dot"></div>
+                    <div class="node-card">
+                        <div class="node-header">
+                            <h4>Phase 6: Mass Production & Shipping</h4>
+                            <span class="node-timeline">Weeks 25+</span>
+                        </div>
+                        <p class="node-desc">We manufacture the first commercial batch of 1,000+ units, launch companion parent mobile apps in the App Store, and transition to a full store.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View 2: Detailed WBS Grid (Rendered dynamically by JavaScript) -->
+            <div class="roadmap-wbs-view" id="wbs-container">
+                <div class="wbs-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>WBS Code</th>
+                                <th>Phase</th>
+                                <th>Category</th>
+                                <th>Task Description</th>
+                                <th>Timeline</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="wbs-table-body">
+                            <!-- Dynamic Rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Build in Public & Co-design Hub -->
+    <section id="build-in-public">
+        <div class="container bip-grid">
+            <div>
+                <h2 style="text-align: left; margin-bottom: 1.5rem;">Co-Design the Snail Shell</h2>
+                <p style="margin-bottom: 1.5rem;">As part of our commitment to transparency, we are inviting our waitlist community to shape final hardware choices. Cast your vote on the core launch color you want to see manufactured in Phase 4!</p>
+                <p style="margin-bottom: 2rem;">Waitlist members receive priority surveys to select final silicone bumper options, lanyard attachment colors, and app companion widgets.</p>
+                <div class="pcb-img-container">
+                    <img class="pcb-cad-img" src="assets/pcb_cad.png" alt="Sniggle Custom PCB Design CAD Blueprint">
+                </div>
+            </div>
+            
+            <div class="co-design-widget" id="color-voting-widget">
+                <h3>Voter Survey: Launch Color</h3>
+                <p class="node-desc" style="margin-bottom: 1.5rem;">Which color should be standard in our first mass-production run?</p>
+                <div class="color-options">
+                    <button class="color-option-btn" data-color="mint">
+                        <div class="color-meta">
+                            <span class="color-swatch swatch-mint"></span>
+                            <span class="color-name">Forest Mint Green</span>
+                        </div>
+                        <span class="vote-results" id="vote-mint">48% of votes</span>
+                    </button>
+                    <button class="color-option-btn" data-color="coral">
+                        <div class="color-meta">
+                            <span class="color-swatch swatch-coral"></span>
+                            <span class="color-name">Sunset Coral Pink</span>
+                        </div>
+                        <span class="vote-results" id="vote-coral">32% of votes</span>
+                    </button>
+                    <button class="color-option-btn" data-color="sky">
+                        <div class="color-meta">
+                            <span class="color-swatch swatch-sky"></span>
+                            <span class="color-name">Ocean Sky Blue</span>
+                        </div>
+                        <span class="vote-results" id="vote-sky">20% of votes</span>
+                    </button>
+                </div>
+                <p style="font-size: 0.85rem; text-align: center;" class="node-desc">You can vote once. Results update in real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Waitlist Capture Form -->
+    <section id="waitlist">
+        <div class="container">
+            <div class="playful-card waitlist-card">
+                <h2>Secure Your Sniggle Early</h2>
+                <p>Join the waitlist today. Get exclusive, behind-the-scenes updates as we transition through engineering validation (EVT) and design validation (DVT), plus locked-in early bird pre-order discounts.</p>
+                
+                <form class="waitlist-form" id="waitlist-form">
+                    <input type="email" class="waitlist-input" id="waitlist-email" placeholder="Enter your email address..." required>
+                    <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+                </form>
+                <div class="waitlist-success-msg" id="waitlist-success">
+                    🎉 Yay! You've been added to the Sniggle snail trail waitlist. We will notify you when pre-orders open!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs Accordion -->
+    <section id="specs">
+        <div class="container">
+            <h2>Sniggle Hardware Specifications</h2>
+            <div class="specs-wrapper">
+                <div class="specs-item">
+                    <div class="specs-header">
+                        <h4>Cellular & Communication Protocols</h4>
+                        <span class="specs-icon">+</span>
+                    </div>
+                    <div class="specs-content">
+                        <div class="specs-content-inner">
+                            <p>Equipped with low-power wide-area network (LPWAN) modules utilizing LTE-M (Cat-M1) and NB-IoT. These bands operate on low frequency with exceptional building penetration, ensuring location telemetry transmission where standard smartphone bands fail. The device features an integrated eSIM profile for cross-carrier roaming.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-item">
+                    <div class="specs-header">
+                        <h4>Microcontroller (MCU) & Power Consumption</h4>
+                        <span class="specs-icon">+</span>
+                    </div>
+                    <div class="specs-content">
+                        <div class="specs-content-inner">
+                            <p>Driven by an ultra-low power ARM Cortex-M33 MCU. Optimized state-machine firmware sleeps at 15uA, waking to send coordinate bursts. Incorporates a 450mAh rechargeable Li-Po battery with safety heat shields and over-current protection, delivering up to 48 hours of normal operation on a single USB-C charge.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-item">
+                    <div class="specs-header">
+                        <h4>Enclosure & Safety Rating</h4>
+                        <span class="specs-icon">+</span>
+                    </div>
+                    <div class="specs-content">
+                        <div class="specs-content-inner">
+                            <p>Crafted from medical-grade, hypoallergenic polycarbonate-ABS with a co-molded silicone bumper. IP67 rated dust-proof and waterproof (submersed up to 1m for 30 minutes). Certified for drop durability from heights up to 1.8 meters on concrete. Built entirely screen-free to eliminate blue light, screen fractures, and distractions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="footer-nav">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#simulator">Simulator</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#specs">Specs</a></li>
+            </ul>
+            <img src="assets/logo.png" alt="Sniggle Mascot Logo" style="height: 54px; margin-bottom: 1rem;">
+            <p class="copyright">&copy; 2026 Sniggle Technology. All rights reserved. Building in public toward a safer, screen-free world.</p>
+        </div>
+    </footer>
+
+    <!-- Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
